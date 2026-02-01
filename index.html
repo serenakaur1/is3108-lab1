@@ -1,404 +1,357 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
   <title>Serena Jacqueelyn Kaur | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-smooth-scroll="true" tabindex="0">
-  <div id="top"></div>
-
+<body>
   <!-- NAV -->
-  <nav class="navbar navbar-expand-lg sticky-top">
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
     <div class="container">
-      <div class="nav-pill shadow-soft w-100">
-        <a class="navbar-brand brand-pill d-flex align-items-center gap-2" href="#top">
-          <span class="brand-name">Serena Jacqueelyn Kaur</span>
-        </a>
+      <a class="navbar-brand fw-bold" href="#top">Serena Kaur</a>
 
-        <button class="navbar-toggler ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#topNav"
-          aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="topNav">
-          <ul class="navbar-nav mx-auto gap-lg-2 align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-
-          <div class="d-flex align-items-center gap-2 ms-lg-auto py-2 py-lg-0">
-            <a class="btn btn-primary btn-sm btn-soft"
-               href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/"
-               target="_blank" rel="noopener">LinkedIn</a>
-
-            <a class="btn btn-dark btn-sm btn-soft"
-               href="https://github.com/serenakaur1"
-               target="_blank" rel="noopener">GitHub</a>
-            
-
-            <button class="btn btn-icon" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
-              <span id="themeIcon">☀️</span>
-            </button>
-          </div>
-        </div>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
   </nav>
 
-
   <!-- HERO -->
-  <header class="hero">
-    <div class="container py-5">
-      <div class="text-center">
-        <div class="hero-photo-wrap mx-auto">
-          <!-- exact casing -->
-          <img src="assets/profile.png" alt="Serena profile photo" class="hero-photo">
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="hero-shell">
+        <div class="hero-photo">
+          <img src="assets/profile.png" alt="Serena Jacqueelyn Kaur" />
         </div>
 
-        <p class="hero-kicker mt-4 mb-2">Hello, I’m</p>
-        <h1 class="hero-title mb-2">Serena Jacqueelyn Kaur</h1>
-        <p class="hero-subtitle mb-4">
-          Product Analytics • BComp (Information Systems) @ NUS
-        </p>
+        <div class="hero-text">
+          <div class="hero-kicker">Hello, I’m</div>
+          <h1 class="hero-title">Serena Jacqueelyn Kaur</h1>
+          <div class="hero-subtitle">Information Systems • Product & Analytics • NUS</div>
 
-        <div class="d-flex justify-content-center gap-2 flex-wrap">
-          <a class="btn btn-primary btn-lg btn-soft"
-             href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/"
-             target="_blank" rel="noopener">LinkedIn</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" target="_blank" href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/">LinkedIn</a>
+            <a class="btn btn-dark" target="_blank" href="https://github.com/serenakaur1">GitHub</a>
+          </div>
 
-          <a class="btn btn-outline-secondary btn-lg btn-soft" href="#contact">Contact</a>
+          <p class="hero-one-liner">
+            Product analytics, experimentation, dashboards, and GTM insights — I like turning data into decisions.
+          </p>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="container pb-5">
-
-    <!-- ABOUT ME -->
-    <section id="about" class="section">
-      <div class="section-head text-center">
-        <h2 class="section-title">About Me</h2>
-        <div class="section-underline"></div>
+  <!-- ABOUT ME (with photo + Education + Co-Curriculars) -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <div class="underline"></div>
       </div>
 
-      <div class="row g-4 align-items-stretch mt-3">
-        <!-- Left: photo card -->
-        <div class="col-12 col-lg-5">
-          <div class="card card-soft h-100 shadow-soft p-3">
-            <img src="assets/profile.png" class="about-photo" alt="Serena photo">
-          </div>
+      <div class="about-grid">
+        <div class="about-photo-card">
+          <img src="assets/profile.png" alt="Serena photo" />
+          <div class="about-photo-caption">Serena Jacqueelyn Kaur</div>
         </div>
 
-        <!-- Right: tabs -->
-        <div class="col-12 col-lg-7">
-          <div class="card card-soft h-100 shadow-soft">
-            <div class="card-body p-4">
-              <ul class="nav nav-tabs tabs-soft" id="aboutTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="edu-tab" data-bs-toggle="tab" data-bs-target="#edu"
-                    type="button" role="tab" aria-controls="edu" aria-selected="true">
-                    Education
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="cc-tab" data-bs-toggle="tab" data-bs-target="#cc"
-                    type="button" role="tab" aria-controls="cc" aria-selected="false">
-                    Co-Curriculars
-                  </button>
-                </li>
+        <div class="about-card">
+          <div class="tabs">
+            <button class="tab-btn active" type="button" data-tab="edu">Education</button>
+            <button class="tab-btn" type="button" data-tab="cc">Co-Curriculars</button>
+          </div>
+
+          <div class="tab-panels">
+            <!-- Education -->
+            <div class="tab-panel active" id="tab-edu">
+              <h3 class="card-heading">National University of Singapore</h3>
+              <div class="subtext">Bachelor of Computing (Information Systems) with Honours</div>
+              <div class="subtext">Jul 2023 – 2027 (Penultimate) • Singapore</div>
+
+              <ul class="clean-list mt-3">
+                <li>Double Major in Quantitative Finance</li>
+                <li>Specialization in Digital Product and Platform Management</li>
+              </ul>
+            </div>
+
+            <!-- Co-Curriculars -->
+            <div class="tab-panel" id="tab-cc">
+              <h3 class="card-heading">Co-Curriculars</h3>
+              <ul class="clean-list mt-2">
+                <li>Overseas Entrepreneurial Exposure: NOC Indonesia (Jakarta) ’24</li>
               </ul>
 
-              <div class="tab-content pt-3">
-                <div class="tab-pane fade show active" id="edu" role="tabpanel" aria-labelledby="edu-tab">
-                  <div class="edu-card">
-                    <div class="edu-title">National University of Singapore</div>
-                    <div class="edu-sub">Bachelor of Computing (Information Systems) with Honours</div>
-                    <div class="edu-meta">Jul 2023 – 2027 (Penultimate) • Singapore</div>
-                    <ul class="mt-3 mb-0">
-                      <li>Double Major in Quantitative Finance</li>
-                      <li>Specialization in Digital Product and Platform Management</li>
-                      <li>Overseas Entrepreneurial Exposure: NOC Indonesia (Jakarta) ’24</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="tab-pane fade" id="cc" role="tabpanel" aria-labelledby="cc-tab">
-                  <div class="edu-card">
-                    <div class="edu-title">Leadership / Extracurricular</div>
-                    <div class="edu-meta">Aug 2023 – Present</div>
-                    <ul class="mt-3">
-                      <li>Ridge View Residential College Subcommittee (NUS Debates, NUS Women in Tech)</li>
-                      <li>NUS Entrepreneurship Society – Catalystx (External Liaison Executive)</li>
-                      <li>Planned & executed hackathon with 150+ participants from 15 countries; sold out in 10 days and secured ~SGD 10K sponsorships</li>
-                      <li>Liaised with leaders across fintech, entrepreneurship, sustainability, and health-tech as judges/mentors</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="about-blurb mt-3">
+              <div class="callout mt-3">
                 Product analytics, experimentation, dashboards, and GTM insights — I like turning data into decisions.
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="section-head text-center">
-        <h2 class="section-title">Experience</h2>
-        <div class="section-underline"></div>
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Skills</h2>
+        <div class="underline"></div>
       </div>
 
-      <div class="timeline mt-4">
-        <div class="timeline-line"></div>
-
-        <!-- TikTok -->
-        <div class="timeline-item left">
-          <div class="timeline-dot">
-            <img src="assets/logos/tiktok.png" alt="TikTok logo" class="dot-logo">
-          </div>
-
-          <div class="timeline-card shadow-soft">
-            <div class="d-flex justify-content-between flex-wrap gap-2">
-              <div>
-                <div class="fw-bold">Product Analytics Intern – Product Solutions &amp; Operations</div>
-                <div class="text-muted">TikTok / ByteDance • Singapore</div>
-              </div>
-              <div class="timeline-date">May 2025 – Aug 2025</div>
-            </div>
-            <ul class="mt-3 mb-0">
-              <li>Owned and scaled Global IAP FastForward Program (50+ advertisers), driving ~SGD 100K revenue growth with &gt;10% WoW adoption across regions.</li>
-              <li>Built SQL-driven all-in-one Global SaaS dashboard for partner performance (real-time adoption + revenue by region/account).</li>
-              <li>Led multi-cell A/B tests and delivered analytics-to-GTM recommendations to improve activation and retention.</li>
-              <li>Produced 15+ ROI case studies (incl. TikTok’s first iOS ROAS success story) for global sales enablement.</li>
-              <li>Presented demos to leadership to align regional strategy for Global Gaming monetization roadmap (Q3–Q4).</li>
-            </ul>
+      <div class="grid-3">
+        <div class="card-soft">
+          <h3 class="card-heading">Programming & Data</h3>
+          <div class="pill-wrap">
+            <span class="pill">Python</span>
+            <span class="pill">R</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Java</span>
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">Django</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">Excel (VBA)</span>
           </div>
         </div>
 
-        <!-- GRCG -->
-        <div class="timeline-item right">
-          <div class="timeline-dot">
-            <img src="assets/logos/grc.png" alt="Global Research & Consulting Group logo" class="dot-logo dot-logo-wide">
+        <div class="card-soft">
+          <h3 class="card-heading">Tools</h3>
+          <div class="pill-wrap">
+            <span class="pill pill-dark">Tableau</span>
+            <span class="pill pill-dark">Power BI</span>
+            <span class="pill pill-dark">Google Workspace</span>
+            <span class="pill pill-dark">Figma</span>
+            <span class="pill pill-dark">Jira</span>
+            <span class="pill pill-dark">SCRUM</span>
+          </div>
+        </div>
+
+        <div class="card-soft">
+          <h3 class="card-heading">Languages</h3>
+          <div class="pill-wrap">
+            <span class="pill">English</span>
+            <span class="pill">Punjabi</span>
+            <span class="pill">Hindi</span>
+            <span class="pill">Malay</span>
+            <span class="pill">Mandarin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Experience</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="timeline">
+
+        <!-- TikTok -->
+        <div class="t-row">
+          <div class="t-left">
+            <div class="t-card">
+              <h3 class="job-title">Product Analytics Intern – Global Gaming (IAP)</h3>
+              <p class="job-meta"><b>TikTok (ByteDance)</b> • Singapore</p>
+              <ul class="clean-list">
+                <li>Owned and scaled Global IAP FastForward Program (50+ advertisers), driving ~SGD 100K revenue growth with &gt;10% WoW adoption across regions.</li>
+                <li>Built SQL-driven all-in-one Global SaaS dashboard for partner performance (real-time adoption + revenue by region/account).</li>
+                <li>Led multi-cell A/B tests and delivered analytics-to-GTM recommendations to improve activation and retention.</li>
+                <li>Produced 15+ ROI case studies (incl. TikTok’s first iOS ROAS success story) for global sales enablement.</li>
+                <li>Presented demos to leadership to align regional strategy for Global Gaming monetization roadmap (Q3–Q4).</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="timeline-card shadow-soft">
-            <div class="d-flex justify-content-between flex-wrap gap-2">
-              <div>
-                <div class="fw-bold">Associate Consultant – Pro-bono</div>
-                <div class="text-muted">Global Research &amp; Consulting Group (NUS) • Singapore</div>
-              </div>
-              <div class="timeline-date">Aug 2024 – Jan 2025</div>
+          <div class="t-mid">
+            <div class="t-dot">
+              <img src="assets/tiktok.png" alt="TikTok logo" />
             </div>
-            <ul class="mt-3 mb-0">
-              <li>Redesigned inventory + order-tracking workflows for Du Anyam (women-empowerment social enterprise).</li>
-              <li>Built SaaS-based inventory dashboard (Google Workspace + Tableau), centralizing 5 production teams; reduced reporting time ~40%.</li>
-              <li>Delivered digital transformation roadmap recommending scalable analytics tools (projected ~25% fewer errors).</li>
-            </ul>
+            <div class="t-line"></div>
+          </div>
+
+          <div class="t-right">
+            <div class="t-date">2025</div>
+          </div>
+        </div>
+
+        <!-- GRC -->
+        <div class="t-row">
+          <div class="t-left"></div>
+
+          <div class="t-mid">
+            <div class="t-dot">
+              <img src="assets/grc.png" alt="Global Research & Consulting Group logo" />
+            </div>
+            <div class="t-line"></div>
+          </div>
+
+          <div class="t-right">
+            <div class="t-card">
+              <h3 class="job-title">Associate Consultant – Pro-bono</h3>
+              <p class="job-meta"><b>Global Research &amp; Consulting Group (NUS)</b> • Singapore</p>
+              <p class="job-meta">Aug 2024 – Jan 2025</p>
+              <ul class="clean-list">
+                <li>Redesigned inventory + order-tracking workflows for Du Anyam (women-empowerment social enterprise).</li>
+                <li>Built SaaS-based inventory dashboard (Google Workspace + Tableau), centralizing 5 production teams; reduced reporting time ~40%.</li>
+                <li>Delivered digital transformation roadmap recommending scalable analytics tools (projected ~25% fewer errors).</li>
+              </ul>
+            </div>
+            <div class="t-date mt-2">Aug 2024 – Jan 2025</div>
           </div>
         </div>
 
         <!-- Shopee -->
-        <div class="timeline-item left">
-          <div class="timeline-dot">
-            <img src="assets/logos/shopee.png" alt="Shopee logo" class="dot-logo">
+        <div class="t-row">
+          <div class="t-left">
+            <div class="t-card">
+              <h3 class="job-title">Brand Risk Analyst Intern – Regional Brand Partnerships</h3>
+              <p class="job-meta"><b>Shopee</b> • Singapore</p>
+              <p class="job-meta">Aug 2024 – Nov 2024</p>
+              <ul class="clean-list">
+                <li>Queried/modelled large datasets (SQL + Python) to build BI dashboards tracking GMV and growth across SEA beauty partners.</li>
+                <li>Applied financial validation + risk assessment (VBA) to verify growth forecasts; supported Shopee Live adoption as a revenue channel.</li>
+                <li>Automated risk reports via VBA macros, cutting manual effort ~30% and improving exec reporting accuracy.</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="timeline-card shadow-soft">
-            <div class="d-flex justify-content-between flex-wrap gap-2">
-              <div>
-                <div class="fw-bold">Brand Risk Analyst Intern – Regional Brand Partnerships</div>
-                <div class="text-muted">Shopee • Singapore</div>
-              </div>
-              <div class="timeline-date">Aug 2024 – Nov 2024</div>
+          <div class="t-mid">
+            <div class="t-dot">
+              <img src="assets/shopee.png" alt="Shopee logo" />
             </div>
-            <ul class="mt-3 mb-0">
-              <li>Queried/modelled large datasets (SQL + Python) to build BI dashboards tracking GMV and growth across SEA beauty partners.</li>
-              <li>Applied financial validation + risk assessment (VBA) to verify growth forecasts; supported Shopee Live adoption as a revenue channel.</li>
-              <li>Automated risk reports via VBA macros, cutting manual effort ~30% and improving exec reporting accuracy.</li>
-            </ul>
+            <div class="t-line"></div>
+          </div>
+
+          <div class="t-right">
+            <div class="t-date">Aug 2024 – Nov 2024</div>
           </div>
         </div>
 
         <!-- IJO -->
-        <div class="timeline-item right">
-          <div class="timeline-dot">
-            <img src="assets/logos/ijo.png" alt="IJO logo" class="dot-logo">
+        <div class="t-row">
+          <div class="t-left"></div>
+
+          <div class="t-mid">
+            <div class="t-dot">
+              <img src="assets/ijo.png" alt="IJO logo" />
+            </div>
+            <div class="t-line"></div>
           </div>
 
-          <div class="timeline-card shadow-soft">
-            <div class="d-flex justify-content-between flex-wrap gap-2">
-              <div>
-                <div class="fw-bold">Tech Consulting &amp; Automation Intern</div>
-                <div class="text-muted">IJO Inovasi • Jakarta, Indonesia</div>
-              </div>
-              <div class="timeline-date">May 2024 – Aug 2024</div>
+          <div class="t-right">
+            <div class="t-card">
+              <h3 class="job-title">Tech Consulting &amp; Automation Intern</h3>
+              <p class="job-meta"><b>IJO Inovasi</b> • Jakarta, Indonesia</p>
+              <p class="job-meta">May 2024 – Aug 2024</p>
+              <ul class="clean-list">
+                <li>Built ETL pipelines (Python + SQL) aggregating ESG metrics under GRI/SASB; improved processing efficiency ~20%.</li>
+                <li>Leveraged Excel automation for carbon/waste tracking, raising data accuracy by 15%.</li>
+                <li>Advised founders on green-field ERP design; communicated ESG risk insights through dashboards and reports.</li>
+              </ul>
             </div>
-            <ul class="mt-3 mb-0">
-              <li>Built ETL pipelines (Python + SQL) aggregating ESG metrics under GRI/SASB; improved processing efficiency ~20%.</li>
-              <li>Leveraged Excel automation for carbon/waste tracking, raising data accuracy by 15%.</li>
-              <li>Advised founders on green-field ERP design; communicated ESG risk insights through dashboards and reports.</li>
-            </ul>
+            <div class="t-date mt-2">May 2024 – Aug 2024</div>
           </div>
         </div>
 
         <!-- A*STAR -->
-        <div class="timeline-item left">
-          <div class="timeline-dot">
-            <img src="assets/logos/astar.png" alt="A*STAR logo" class="dot-logo">
+        <div class="t-row">
+          <div class="t-left">
+            <div class="t-card">
+              <h3 class="job-title">R&amp;D Data Analytics Intern</h3>
+              <p class="job-meta"><b>A*STAR (Agency for Science, Technology and Research)</b> • Singapore</p>
+              <p class="job-meta">Mar 2022 – Aug 2022</p>
+              <ul class="clean-list">
+                <li>Data visualisation &amp; pipelining</li>
+                <li>Experimental troubleshooting &amp; product optimisation</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="timeline-card shadow-soft">
-            <div class="d-flex justify-content-between flex-wrap gap-2">
-              <div>
-                <div class="fw-bold">R&amp;D Data Analytics Intern</div>
-                <div class="text-muted">A*STAR (Agency for Science, Technology and Research) • Singapore</div>
-              </div>
-              <div class="timeline-date">Mar 2022 – Aug 2022</div>
+          <div class="t-mid">
+            <div class="t-dot">
+              <img src="assets/astar.png" alt="A*STAR logo" />
             </div>
-
-            <ul class="mt-3 mb-0">
-              <li>Data visualisation &amp; pipelining</li>
-              <li>Experimental troubleshooting &amp; product optimisation</li>
-            </ul>
           </div>
-        </div>
 
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="section-head text-center">
-        <h2 class="section-title">Skills</h2>
-        <div class="section-underline"></div>
-      </div>
-
-      <div class="row g-4 mt-3">
-        <div class="col-12 col-lg-6">
-          <div class="card card-soft shadow-soft">
-            <div class="card-body p-4">
-              <h3 class="h5 fw-bold mb-3">Programming &amp; Data</h3>
-              <div class="chip-row">
-                <span class="chip">Python</span>
-                <span class="chip">R</span>
-                <span class="chip">SQL</span>
-                <span class="chip">Java</span>
-                <span class="chip">HTML/CSS</span>
-                <span class="chip">Django</span>
-                <span class="chip">Node.js</span>
-                <span class="chip">Excel (VBA)</span>
-              </div>
-            </div>
+          <div class="t-right">
+            <div class="t-date">Mar 2022 – Aug 2022</div>
           </div>
         </div>
 
-        <div class="col-12 col-lg-6">
-          <div class="card card-soft shadow-soft">
-            <div class="card-body p-4">
-              <h3 class="h5 fw-bold mb-3">Tools</h3>
-              <div class="chip-row">
-                <span class="chip">Tableau</span>
-                <span class="chip">Power BI</span>
-                <span class="chip">Google Workspace</span>
-                <span class="chip">Figma</span>
-                <span class="chip">Jira</span>
-                <span class="chip">SCRUM</span>
-              </div>
+      </div>
+    </div>
+  </section>
 
-              <hr class="soft-hr">
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Me</h2>
+        <div class="underline"></div>
+      </div>
 
-              <h3 class="h5 fw-bold mb-3">Languages</h3>
-              <div class="chip-row">
-                <span class="chip">English</span>
-                <span class="chip">Punjabi</span>
-                <span class="chip">Hindi</span>
-                <span class="chip">Malay</span>
-                <span class="chip">Mandarin</span>
-              </div>
-            </div>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:serenajkaur@u.nus.edu">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-text">
+            <h3>Email</h3>
+            <p class="muted mb-0">serenajkaur@u.nus.edu →</p>
           </div>
-        </div>
+        </a>
+
+        <a class="contact-card" target="_blank" href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/">
+          <div class="contact-icon contact-in">in</div>
+          <div class="contact-text">
+            <h3>LinkedIn</h3>
+            <p class="muted mb-0">Serena Jacqueelyn Kaur →</p>
+          </div>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="section-head text-center">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="section-underline"></div>
-      </div>
+  <footer class="footer">
+    <div class="container text-center">
+      <small>Created by Serena Jacqueelyn Kaur</small>
+    </div>
+  </footer>
 
-      <div class="row g-4 justify-content-center mt-3">
-        <div class="col-12 col-md-5">
-          <a class="contact-card shadow-soft" href="mailto:serenajkaur@u.nus.edu">
-            <div class="contact-icon">✉️</div>
-            <div>
-              <div class="contact-title">Email</div>
-              <div class="contact-value">serenajkaur@u.nus.edu</div>
-            </div>
-            <div class="contact-arrow">→</div>
-          </a>
-        </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-        <div class="col-12 col-md-5">
-          <a class="contact-card shadow-soft"
-             href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/"
-             target="_blank" rel="noopener">
-            <div class="contact-icon contact-in">in</div>
-            <div>
-              <div class="contact-title">LinkedIn</div>
-              <div class="contact-value">Serena Jacqueelyn Kaur</div>
-            </div>
-            <div class="contact-arrow">→</div>
-          </a>
-        </div>
-      </div>
-
-      <div class="text-center text-muted small mt-4">
-        © <span id="year"></span> Serena Jacqueelyn Kaur
-      </div>
-    </section>
-
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  <!-- Tabs -->
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const panels = document.querySelectorAll(".tab-panel");
 
-    const body = document.body;
-    const btn = document.getElementById("themeToggle");
-    const icon = document.getElementById("themeIcon");
+    tabButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        tabButtons.forEach(b => b.classList.remove("active"));
+        panels.forEach(p => p.classList.remove("active"));
 
-    const saved = localStorage.getItem("theme");
-    if (saved === "dark") {
-      body.classList.add("theme-dark");
-      icon.textContent = "🌙";
-    }
-
-    btn.addEventListener("click", () => {
-      body.classList.toggle("theme-dark");
-      const isDark = body.classList.contains("theme-dark");
-      icon.textContent = isDark ? "🌙" : "☀️";
-      localStorage.setItem("theme", isDark ? "dark" : "light");
+        btn.classList.add("active");
+        const target = document.getElementById("tab-" + btn.dataset.tab);
+        if (target) target.classList.add("active");
+      });
     });
   </script>
 </body>
