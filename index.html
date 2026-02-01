@@ -1,404 +1,385 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Serena Jacqueelyn Kaur | Portfolio</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serena Jacqueelyn Kaur | Portfolio</title>
 
-    <!-- Bootstrap 5.3 CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <!-- Nicer font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-  <body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-smooth-scroll="true" tabindex="0">
-    <!-- NAV (single-page anchors like your prof's example) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-blur border-bottom sticky-top">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
-          <img
-            src="assets/profile.jpg"
-            alt="Serena profile photo"
-            class="nav-avatar"
-          />
-          <span class="fw-semibold">Serena Kaur</span>
+<body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-smooth-scroll="true" tabindex="0">
+  <div id="top"></div>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <div class="nav-pill shadow-soft w-100">
+        <a class="navbar-brand brand-pill d-flex align-items-center gap-2" href="#top">
+          <span class="brand-name">Serena Jacqueelyn Kaur</span>
         </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#topNav"
-          aria-controls="topNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#topNav"
+          aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="topNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <ul class="navbar-nav mx-auto gap-lg-2 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
-            <li class="nav-item ms-lg-2">
-              <a
-                class="btn btn-outline-light btn-sm"
-                href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </li>
           </ul>
-        </div>
-      </div>
-    </nav>
 
-    <!-- HERO -->
-    <header id="top" class="hero-wrap">
-      <div class="container py-5">
-        <div class="row align-items-center g-4">
-          <div class="col-12 col-lg-7">
-            <div class="badge-pill mb-3">
-              BComp (Information Systems) @ NUS • Product & Analytics
-            </div>
+          <div class="d-flex align-items-center gap-2 ms-lg-auto py-2 py-lg-0">
+            <a class="btn btn-primary btn-sm btn-soft"
+               href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/"
+               target="_blank" rel="noopener">LinkedIn</a>
 
-            <h1 class="display-5 fw-bold lh-sm mb-3">
-              Serena Jacqueelyn Kaur
-            </h1>
+            <a class="btn btn-dark btn-sm btn-soft"
+               href="https://github.com/serenakaur1"
+               target="_blank" rel="noopener">GitHub</a>
 
-            <p class="lead text-muted mb-4 hero-lead">
-              Product analytics + experimentation, dashboards, and strategy. I enjoy turning messy data into
-              clear decisions and building products that ship.
-            </p>
-
-            <div class="d-flex flex-wrap gap-2">
-              <a class="btn btn-primary btn-lg" href="#projects">View Projects</a>
-              <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
-            </div>
-
-            <div class="hero-stats mt-4">
-              <div class="stat-card">
-                <div class="stat-number">NUS</div>
-                <div class="stat-label">BComp (IS)</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-number">QF</div>
-                <div class="stat-label">Double Major</div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-number">PM</div>
-                <div class="stat-label">Product track</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-5">
-            <div class="hero-card shadow-soft">
-              <div class="d-flex align-items-center gap-3">
-                <img
-                  src="assets/profile.jpg"
-                  alt="Serena profile photo"
-                  class="hero-avatar"
-                />
-                <div>
-                  <div class="fw-semibold fs-4">Serena Kaur</div>
-                  <div class="text-muted">Product • Analytics • Strategy</div>
-                </div>
-              </div>
-
-              <hr class="my-4" />
-
-              <div class="d-grid gap-2">
-                <a class="btn btn-dark" href="#contact">Get in touch</a>
-                <a
-                  class="btn btn-outline-dark"
-                  href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View LinkedIn
-                </a>
-              </div>
-
-              <p class="text-muted small mt-3 mb-0">
-                Singapore • Open to internships and projects
-              </p>
-            </div>
+            <button class="btn btn-icon" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+              <span id="themeIcon">☀️</span>
+            </button>
           </div>
         </div>
       </div>
+    </div>
+  </nav>
 
-      <div class="hero-glow" aria-hidden="true"></div>
-    </header>
+  <!-- HERO (photo + name + role + buttons) -->
+  <header class="hero">
+    <div class="container py-5">
+      <div class="text-center">
+        <!-- exact path + exact casing -->
+        <div class="hero-photo-wrap mx-auto">
+          <img src="assets/profile.png" alt="Serena profile photo" class="hero-photo">
+        </div>
 
-    <!-- CONTENT -->
-    <main class="container my-4 my-lg-5">
-      <!-- ABOUT -->
-      <section id="about" class="card shadow-soft mb-4 section-card">
-        <div class="card-body p-4 p-lg-5">
-          <div class="section-title">
-            <h2 class="h3 fw-bold mb-1">About</h2>
-            <p class="text-muted mb-0">What I do + what I’m aiming for.</p>
-          </div>
+        <p class="hero-kicker mt-4 mb-2">Hello, I’m</p>
+        <h1 class="hero-title mb-2">Serena Jacqueelyn Kaur</h1>
+        <p class="hero-subtitle mb-4">
+          Product Analytics • BComp (Information Systems) @ NUS
+        </p>
 
-          <div class="mt-4">
-            <p class="mb-0">
-              I’m a Bachelor of Computing (Information Systems) student at NUS with a double major in
-              Quantitative Finance and a specialization in Digital Product & Platform Management.
-              I like roles where I can combine analytics + product thinking — from defining metrics,
-              building dashboards, running experiments, and translating insights into action.
-            </p>
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+          <a class="btn btn-primary btn-lg btn-soft"
+             href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/"
+             target="_blank" rel="noopener">LinkedIn</a>
+
+          <a class="btn btn-outline-secondary btn-lg btn-soft" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container pb-5">
+    <!-- ABOUT ME -->
+    <section id="about" class="section">
+      <div class="section-head text-center">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="row g-4 align-items-stretch mt-3">
+        <!-- Left:image card -->
+        <div class="col-12 col-lg-5">
+          <div class="card card-soft h-100 shadow-soft p-3">
+            <img src="assets/profile.png" class="about-photo" alt="Serena photo">
           </div>
         </div>
-      </section>
 
-      <!-- EDUCATION -->
-      <section id="education" class="card shadow-soft mb-4 section-card">
-        <div class="card-body p-4 p-lg-5">
-          <div class="section-title">
-            <h2 class="h3 fw-bold mb-1">Education</h2>
-            <p class="text-muted mb-0">Academic background and focus areas.</p>
-          </div>
+        <!-- Right: tabs -->
+        <div class="col-12 col-lg-7">
+          <div class="card card-soft h-100 shadow-soft">
+            <div class="card-body p-4">
+              <ul class="nav nav-tabs tabs-soft" id="aboutTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="edu-tab" data-bs-toggle="tab" data-bs-target="#edu"
+                    type="button" role="tab" aria-controls="edu" aria-selected="true">
+                    Education
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="cc-tab" data-bs-toggle="tab" data-bs-target="#cc"
+                    type="button" role="tab" aria-controls="cc" aria-selected="false">
+                    Co-Curriculars
+                  </button>
+                </li>
+              </ul>
 
-          <div class="mt-4 info-grid">
-            <div class="info-item">
-              <div class="info-label">University</div>
-              <div class="info-value">National University of Singapore (NUS)</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Degree</div>
-              <div class="info-value">BComp (Information Systems), 2023–2027</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Double Major</div>
-              <div class="info-value">Quantitative Finance</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Specialization</div>
-              <div class="info-value">Digital Product & Platform Management</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Overseas Exposure</div>
-              <div class="info-value">NOC Indonesia (Jakarta), 2024</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">CGPA</div>
-              <div class="info-value">4.0</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SKILLS -->
-      <section id="skills" class="card shadow-soft mb-4 section-card">
-        <div class="card-body p-4 p-lg-5">
-          <div class="section-title">
-            <h2 class="h3 fw-bold mb-1">Skills</h2>
-            <p class="text-muted mb-0">The tools I’m strongest in.</p>
-          </div>
-
-          <div class="row g-3 mt-4">
-            <div class="col-12 col-md-6">
-              <div class="skill-card h-100">
-                <div class="fw-semibold mb-2">Technical</div>
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="chip chip-primary">Python</span>
-                  <span class="chip chip-primary">SQL</span>
-                  <span class="chip chip-primary">Java</span>
-                  <span class="chip chip-primary">HTML/CSS</span>
-                  <span class="chip chip-neutral">Django</span>
-                  <span class="chip chip-neutral">Excel (VBA)</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6">
-              <div class="skill-card h-100">
-                <div class="fw-semibold mb-2">Tools</div>
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="chip chip-neutral">Tableau</span>
-                  <span class="chip chip-neutral">Power BI</span>
-                  <span class="chip chip-neutral">Figma</span>
-                  <span class="chip chip-neutral">Jira / Scrum</span>
-                  <span class="chip chip-neutral">Git / GitHub</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- EXPERIENCE -->
-      <section id="experience" class="card shadow-soft mb-4 section-card">
-        <div class="card-body p-4 p-lg-5">
-          <div class="section-title">
-            <h2 class="h3 fw-bold mb-1">Experience</h2>
-            <p class="text-muted mb-0">Highlights (keep it concise and recruiter-friendly).</p>
-          </div>
-
-          <div class="mt-4 timeline">
-            <div class="timeline-item">
-              <div class="d-flex justify-content-between flex-wrap gap-2">
-                <div class="fw-semibold">TikTok (ByteDance) — Product Analytics (Intern)</div>
-                <span class="pill">Analytics • Dashboards</span>
-              </div>
-              <div class="text-muted mt-1">
-                Partner performance insights, analytics-to-recommendations, and reporting support.
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="d-flex justify-content-between flex-wrap gap-2">
-                <div class="fw-semibold">Shopee — Brand Risk Analyst (Intern)</div>
-                <span class="pill">SQL • BI • Automation</span>
-              </div>
-              <div class="text-muted mt-1">
-                SQL/Python analysis, BI dashboards, and workflow automation to reduce manual work.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects" class="card shadow-soft mb-4 section-card">
-        <div class="card-body p-4 p-lg-5">
-          <div class="section-title">
-            <h2 class="h3 fw-bold mb-1">Projects</h2>
-            <p class="text-muted mb-0">A few projects that show your range.</p>
-          </div>
-
-          <div class="row g-3 mt-4">
-            <div class="col-12 col-md-6">
-              <div class="project-card h-100">
-                <div class="d-flex justify-content-between align-items-start gap-2">
-                  <div>
-                    <div class="fw-semibold fs-5">AuroraMart</div>
-                    <div class="text-muted small">Django • Web app</div>
+              <div class="tab-content pt-3">
+                <div class="tab-pane fade show active" id="edu" role="tabpanel" aria-labelledby="edu-tab">
+                  <div class="edu-card">
+                    <div class="edu-title">National University of Singapore</div>
+                    <div class="edu-sub">Bachelor of Computing (Information Systems) with Honours</div>
+                    <div class="edu-meta">Jul 2023 – 2027 (Penultimate) • Singapore</div>
+                    <ul class="mt-3 mb-0">
+                      <li>Double Major in Quantitative Finance</li>
+                      <li>Specialization in Digital Product and Platform Management</li>
+                      <li>Overseas Entrepreneurial Exposure: NOC Indonesia (Jakarta) ’24</li>
+                    </ul>
                   </div>
-                  <span class="pill">Full-stack</span>
                 </div>
 
-                <p class="text-muted mt-3 mb-0">
-                  Django e-commerce project focused on clean user flows and maintainable structure.
-                </p>
-
-                <div class="mt-3 d-flex flex-wrap gap-2">
-                  <span class="chip chip-neutral">Django</span>
-                  <span class="chip chip-neutral">Bootstrap</span>
-                  <span class="chip chip-neutral">Git</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6">
-              <div class="project-card h-100">
-                <div class="d-flex justify-content-between align-items-start gap-2">
-                  <div>
-                    <div class="fw-semibold fs-5">Analytics Dashboards</div>
-                    <div class="text-muted small">SQL • Tableau/Power BI</div>
+                <div class="tab-pane fade" id="cc" role="tabpanel" aria-labelledby="cc-tab">
+                  <div class="edu-card">
+                    <div class="edu-title">Leadership / Extracurricular</div>
+                    <div class="edu-meta">Aug 2023 – Present</div>
+                    <ul class="mt-3">
+                      <li>Ridge View Residential College Subcommittee (NUS Debates, NUS Women in Tech)</li>
+                      <li>NUS Entrepreneurship Society – Catalystx (External Liaison Executive)</li>
+                      <li>Planned & executed hackathon with 150+ participants from 15 countries; sold out in 10 days and secured ~SGD 10K sponsorships</li>
+                      <li>Liaised with leaders across fintech, entrepreneurship, sustainability, and health-tech as judges/mentors</li>
+                    </ul>
                   </div>
-                  <span class="pill">Insights</span>
                 </div>
+              </div>
 
-                <p class="text-muted mt-3 mb-0">
-                  Built dashboards and analysis workflows to track key metrics and support decisions.
-                </p>
-
-                <div class="mt-3 d-flex flex-wrap gap-2">
-                  <span class="chip chip-neutral">SQL</span>
-                  <span class="chip chip-neutral">Tableau</span>
-                  <span class="chip chip-neutral">Power BI</span>
-                </div>
+              <div class="about-blurb mt-3">
+                Product analytics, experimentation, dashboards, and GTM insights — I like turning data into decisions.
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="card shadow-soft section-card">
-        <div class="card-body p-4 p-lg-5">
-          <div class="section-title">
-            <h2 class="h3 fw-bold mb-1">Contact</h2>
-            <p class="text-muted mb-0">Fastest reply: LinkedIn.</p>
-          </div>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-head text-center">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-underline"></div>
+      </div>
 
-          <div class="row g-3 mt-4">
-            <div class="col-12 col-md-6">
-              <div class="contact-tile">
-                <div class="text-muted small">Email</div>
-                <div class="fw-semibold">serenajkaur@u.nus.edu</div>
+      <div class="timeline mt-4">
+        <div class="timeline-line"></div>
+
+        <!-- TikTok -->
+        <div class="timeline-item left">
+          <div class="timeline-dot">T</div>
+          <div class="timeline-card shadow-soft">
+            <div class="d-flex justify-content-between flex-wrap gap-2">
+              <div>
+                <div class="fw-bold">Product Analytics Intern – Product Solutions & Operations</div>
+                <div class="text-muted">TikTok / ByteDance • Singapore</div>
               </div>
+              <div class="timeline-date">May 2025 – Aug 2025</div>
             </div>
-
-            <div class="col-12 col-md-6">
-              <a
-                class="contact-tile contact-link"
-                href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="text-muted small">LinkedIn</div>
-                <div class="fw-semibold">serena-jacqueelyn-kaur</div>
-              </a>
-            </div>
-
-            <div class="col-12">
-              <div class="contact-form">
-                <label class="form-label" for="message">Message</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Say hi..."></textarea>
-
-                <div class="d-flex justify-content-end gap-2 mt-3">
-                  <button class="btn btn-outline-secondary" type="button" id="clearBtn">Clear</button>
-                  <button class="btn btn-primary" type="button" id="sendBtn">Send</button>
-                </div>
-              </div>
-            </div>
+            <ul class="mt-3 mb-0">
+              <li>Owned and scaled Global IAP FastForward Program (50+ advertisers), driving ~SGD 100K revenue growth with &gt;10% WoW adoption across regions.</li>
+              <li>Built SQL-driven all-in-one Global SaaS dashboard for partner performance (real-time adoption + revenue by region/account).</li>
+              <li>Led multi-cell A/B tests and delivered analytics-to-GTM recommendations to improve activation and retention.</li>
+              <li>Produced 15+ ROI case studies (incl. TikTok’s first iOS ROAS success story) for global sales enablement.</li>
+              <li>Presented demos to leadership to align regional strategy for Global Gaming monetization roadmap (Q3–Q4).</li>
+            </ul>
           </div>
-
-          <p class="text-muted small mt-3 mb-0">
-            This form doesn’t send emails yet — it’s for UI only.
-          </p>
         </div>
-      </section>
 
-      <footer class="text-center text-muted small py-4">
+        <!-- NUS GRCG -->
+        <div class="timeline-item right">
+          <div class="timeline-dot">N</div>
+          <div class="timeline-card shadow-soft">
+            <div class="d-flex justify-content-between flex-wrap gap-2">
+              <div>
+                <div class="fw-bold">Associate Consultant – Pro-bono</div>
+                <div class="text-muted">Global Research & Consulting Group (NUS) • Singapore</div>
+              </div>
+              <div class="timeline-date">Aug 2024 – Jan 2025</div>
+            </div>
+            <ul class="mt-3 mb-0">
+              <li>Redesigned inventory + order-tracking workflows for Du Anyam (women-empowerment social enterprise).</li>
+              <li>Built SaaS-based inventory dashboard (Google Workspace + Tableau), centralizing 5 production teams; reduced reporting time ~40%.</li>
+              <li>Delivered digital transformation roadmap recommending scalable analytics tools (projected ~25% fewer errors).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Shopee -->
+        <div class="timeline-item left">
+          <div class="timeline-dot">S</div>
+          <div class="timeline-card shadow-soft">
+            <div class="d-flex justify-content-between flex-wrap gap-2">
+              <div>
+                <div class="fw-bold">Brand Risk Analyst Intern – Regional Brand Partnerships</div>
+                <div class="text-muted">Shopee • Singapore</div>
+              </div>
+              <div class="timeline-date">Aug 2024 – Nov 2024</div>
+            </div>
+            <ul class="mt-3 mb-0">
+              <li>Queried/modelled large datasets (SQL + Python) to build BI dashboards tracking GMV and growth across SEA beauty partners.</li>
+              <li>Applied financial validation + risk assessment (VBA) to verify growth forecasts; supported Shopee Live adoption as a revenue channel.</li>
+              <li>Automated risk reports via VBA macros, cutting manual effort ~30% and improving exec reporting accuracy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- IJO -->
+        <div class="timeline-item right">
+          <div class="timeline-dot">I</div>
+          <div class="timeline-card shadow-soft">
+            <div class="d-flex justify-content-between flex-wrap gap-2">
+              <div>
+                <div class="fw-bold">Tech Consulting & Automation Intern</div>
+                <div class="text-muted">IJO Inovasi • Jakarta, Indonesia</div>
+              </div>
+              <div class="timeline-date">May 2024 – Aug 2024</div>
+            </div>
+            <ul class="mt-3 mb-0">
+              <li>Built ETL pipelines (Python + SQL) aggregating ESG metrics under GRI/SASB; improved processing efficiency ~20%.</li>
+              <li>Leveraged Excel automation for carbon/waste tracking, raising data accuracy by 15%.</li>
+              <li>Advised founders on green-field ERP design; communicated ESG risk insights through dashboards and reports.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- HedgeDrip -->
+        <div class="timeline-item left">
+          <div class="timeline-dot">H</div>
+          <div class="timeline-card shadow-soft">
+            <div class="d-flex justify-content-between flex-wrap gap-2">
+              <div>
+                <div class="fw-bold">UI/UX Design & Analytics Intern</div>
+                <div class="text-muted">HedgeDrip • Singapore</div>
+              </div>
+              <div class="timeline-date">Aug 2023 – Dec 2023</div>
+            </div>
+            <ul class="mt-3 mb-0">
+              <li>Designed high-fidelity Figma wireframes for an AI-driven resource recommendation platform (beta launch flow improvements).</li>
+              <li>Executed SEO + analytics campaigns boosting organic reach by 30% to inform marketing and product strategy.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head text-center">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-12 col-lg-6">
+          <div class="card card-soft shadow-soft">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold mb-3">Programming & Data</h3>
+              <div class="chip-row">
+                <span class="chip">Python</span>
+                <span class="chip">R</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Java</span>
+                <span class="chip">Tableau</span>
+                <span class="chip">Power BI</span>
+                <span class="chip">Excel (VBA)</span>
+                <span class="chip">HTML/CSS</span>
+                <span class="chip">Django</span>
+                <span class="chip">Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card card-soft shadow-soft">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold mb-3">Platforms & Tools</h3>
+              <div class="chip-row">
+                <span class="chip">Google Workspace</span>
+                <span class="chip">Tableau Online</span>
+                <span class="chip">Figma</span>
+                <span class="chip">Jira</span>
+                <span class="chip">SCRUM</span>
+              </div>
+
+              <hr class="soft-hr">
+
+              <h3 class="h5 fw-bold mb-3">Languages</h3>
+              <div class="chip-row">
+                <span class="chip">English</span>
+                <span class="chip">Punjabi</span>
+                <span class="chip">Hindi</span>
+                <span class="chip">Malay</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-head text-center">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="row g-4 justify-content-center mt-3">
+        <div class="col-12 col-md-5">
+          <a class="contact-card shadow-soft" href="mailto:serenajkaur@u.nus.edu">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-title">Email</div>
+              <div class="contact-value">serenajkaur@u.nus.edu</div>
+            </div>
+            <div class="contact-arrow">→</div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-5">
+          <a class="contact-card shadow-soft"
+             href="https://www.linkedin.com/in/serena-jacqueelyn-kaur/"
+             target="_blank" rel="noopener">
+            <div class="contact-icon contact-in">in</div>
+            <div>
+              <div class="contact-title">LinkedIn</div>
+              <div class="contact-value">Serena Jacqueelyn Kaur</div>
+            </div>
+            <div class="contact-arrow">→</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center text-muted small mt-4">
         © <span id="year"></span> Serena Jacqueelyn Kaur
-      </footer>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-      document.getElementById("clearBtn").addEventListener("click", () => {
-        document.getElementById("message").value = "";
-      });
+    // Theme toggle
+    const body = document.body;
+    const btn = document.getElementById("themeToggle");
+    const icon = document.getElementById("themeIcon");
 
-      document.getElementById("sendBtn").addEventListener("click", () => {
-        alert("Thanks! Please reach me via email or LinkedIn.");
-      });
-    </script>
-  </body>
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark") {
+      body.classList.add("theme-dark");
+      icon.textContent = "🌙";
+    }
+
+    btn.addEventListener("click", () => {
+      body.classList.toggle("theme-dark");
+      const isDark = body.classList.contains("theme-dark");
+      icon.textContent = isDark ? "🌙" : "☀️";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+  </script>
+</body>
 </html>
