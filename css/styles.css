@@ -19,3 +19,19 @@
   font-weight: 600;
   color: #0d6efd;
 }
+
+/* Simple timeline feel for experience section */
+.timeline {
+  display: grid;
+  gap: 12px;
+}
+
+.timeline-item {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+}
+
+.timeline-title {
+  margin-bottom: 2px;
+}
